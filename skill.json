@@ -1,0 +1,38 @@
+{
+  "name": "genpark-resilient-agentic-document-parser-workflow-automaton-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Resilient agentic document parser and workflow automaton handling schema drift, unstructured tables, and API syncs.",
+  "author": "genpark",
+  "category": "document-automation",
+  "tags": [
+    "yc-2026",
+    "document-parser",
+    "agentic-workflow",
+    "schema-drift",
+    "table-extraction"
+  ],
+  "inputs": {
+    "document_source_url": {
+      "type": "string"
+    },
+    "target_schema_format": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "automaton_run_id": {
+      "type": "string"
+    },
+    "document_pages_processed": {
+      "type": "integer"
+    },
+    "ocr_vision_extraction_confidence_pct": {
+      "type": "number"
+    },
+    "structured_json_output_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
